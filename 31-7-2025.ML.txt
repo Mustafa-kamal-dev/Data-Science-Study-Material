@@ -1,0 +1,45 @@
+Types: Supervised (labeled data) 
+Unsupervised (no labels) 
+Reinforcement (learning through rewards)
+
+Structured / Unstructured Data 
+Structured (Tabular: CSV,SQL Tables) 
+Unstructured (Text, images, videos)
+
+Training Set: Used to train the model 
+Testing Set: Used to evaluate final model performance
+ **Validation Set: (optional) Used for tuning models (hyperparameters)
+
+Basic Probability & Statistics Mean, Median, Mode, Standard Deviation Probability, Conditional Probability Distributions (Normal, Skewed)
+
+Standard Deviation (Spread of data) Measures how far values are from the mean
+
+Low std dev = data tightly packed 
+High std dev = data is spread out
+
+Group A: [150, 151,149, 150, 150] 
+Group B: [100, 200, 150, 180, 120]
+
+Chances of an event occuring is Probability If 20 out of 100 people have heart disease
+ P(disease)= 20 / 100 = 0.20 * 100 = 20%
+
+Conditional Probability Probability of one event given that another event has occured
+ P(disease|Chest Pain = Yes) = Probability that a patient has heart disease given that they reported chest pain
+
+Correlation vs Causation
+
+COrrelation: -1 to +1 0: no correlation Higher cholesterol might be correlated with higher chance of heart disease
+
+Causation: One variable directly causes a change in another
+
+Ex: Smoking causes lung damage
+
+Bias: Error from wrong assumptions
+
+Bias is the error due to overly simplistic assumptions in the learning algorithm Leads to underfitting
+
+Variance is error due to model sensitivity to small fluctuations in the training set High Variance: Model captures noise and fluctuations, not just the undelying problem Leads to overfitting
+
+Underfitting: Happens when your model is too simple to learn the underlying pattern Both training and testing errors are high
+
+Overfitting: Model learns both the signal and the noise from training data training error is very low, but test error is high
