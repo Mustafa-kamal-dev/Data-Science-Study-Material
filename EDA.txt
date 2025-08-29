@@ -1,0 +1,151 @@
+Explanation of Statistical Concepts for EDA
+Below is a clear and concise explanation of mean, median, mode, variance, standard deviation, and related statistical concepts, tailored for students learning Exploratory Data Analysis (EDA). These measures help summarize data, understand its distribution, and guide further analysis.
+
+1. Mean (Average)
+What It Is: The mean is the sum of all values in a dataset divided by the number of values. It’s what people typically think of as the "average."
+Why It Matters: It gives a single value representing the center of the data, useful for understanding the overall level of the dataset.
+Key Insight: The mean is sensitive to extreme values (outliers). For example, a few very large values can pull the mean higher, making it less representative of typical data.
+
+Example: In test scores [60, 70, 80, 90, 100], the mean is (60 + 70 + 80 + 90 + 100) / 5 = 80.
+
+2. Median
+What It Is: The median is the middle value when the data is arranged in ascending order. If there’s an even number of values, it’s the average of the two middle ones.
+Why It Matters: It’s a robust measure of central tendency, meaning it’s not affected much by outliers or skewed data.
+Key Insight: The median better represents the "typical" value in skewed distributions, like incomes, where a few high earners don’t distort it.
+
+Example: For [60, 70, 80, 90, 100], the median is 80 (middle value). For [60, 70, 80, 90], it’s (70 + 80) / 2 = 75.
+
+3. Mode
+
+What It Is: The mode is the value that appears most frequently in the dataset.
+Why It Matters: It’s useful for identifying the most common value, especially in categorical data (e.g., most frequent category) or numerical data with clear peaks.
+Key Insight: A dataset can have no mode (if all values appear once), one mode (unimodal), or multiple modes (bimodal/multimodal). It’s less informative for continuous data without clear repeats.
+
+Example: In [60, 70, 70, 80, 90], the mode is 70 (appears twice).
+
+4. Variance
+
+What It Is: Variance measures how spread out the data is by calculating the average of the squared differences between each value and the mean.
+Why It Matters: It shows the degree of variability in the data. High variance means the data points are widely scattered; low variance means they’re close to the mean.
+Key Insight: Variance is in squared units (e.g., if data is in meters, variance is in meters²), which can make it harder to interpret directly.
+
+Example: For data with a mean of 50, values far from 50 (e.g., 20, 80) produce a higher variance than values close to 50 (e.g., 48, 52).
+
+5. Standard Deviation
+
+What It Is: The standard deviation is the square root of the variance. It measures spread in the same units as the data.
+Why It Matters: It’s easier to interpret than variance, showing the typical distance of data points from the mean. In a normal distribution, about 68% of data lies within one standard deviation of the mean.
+Key Insight: A smaller standard deviation indicates tightly clustered data; a larger one indicates more spread.
+
+Example: If test scores have a standard deviation of 10, most scores are within 10 points of the mean.
+
+6. Other Related Concepts
+
+Range: The difference between the maximum and minimum values. It’s a simple measure of spread but is highly sensitive to outliers. For example, in [60, 70, 80, 90, 100], the range is 100 - 60 = 40.
+Quartiles: These divide the data into four equal parts:
+Q1 (25th percentile): The value below which 25% of the data lies.
+Q2 (50th percentile): The median.
+Q3 (75th percentile): The value below which 75% of the data lies.
+Interquartile Range (IQR): The difference between Q3 and Q1, representing the middle 50% of the data. It’s used to identify outliers (values below Q1 - 1.5 × IQR or above Q3 + 1.5 × IQR).
+
+Skewness: Measures the asymmetry of the data distribution:
+
+Positive skew: The tail is longer on the right (e.g., income or time to failure).
+Negative skew: The tail is longer on the left (e.g., age at retirement).
+Symmetric data (like a normal distribution) has zero skew.
+
+
+Dataset: [5, 7, 8, 10, 12, 15, 18, 20, 25, 40]
+
+Calculate Q1, Q3, and IQR.
+
+Identify any outliers.
+
+Q1=7.75
+Q3=21.25
+
+IQR = Q3-Q1
+21.25 - 7.75 = 13.5 its is IQR
+
+Lower boundary: Q1 - 1.5 x IQR = 7.75 - (1.5 x 13.5) = -12.5
+Upper boundary: Q3 + 1.5 x IQR = 21.25 + (1.5 x 13.5) = 41.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question: Weekly Coffee Shop Expenses ($)
+Dataset: [5, 10, 10, 15, 20, 25, 80]
+
+Calculate the mean, mode, and median of the dataset.
+Calculate Q1, Q3, and IQR.
+Identify any outliers using the IQR method (values below Q1 - 1.5 x IQR(L.B) or above  Q3 + 1.5 x IQR(U.B)).
+
+n=7
+Q1 position = (n+1)/4 = 2nd Position = 2nd Position pr 10 available hai
+Q3 position = 3(n+1)/4 = 6th Position = 6th Position pr 25 available hai
+
+IQR = Q3-Q1
+IQR = 25-10
+IQR=15
+Mean=23.57
+Mode=10
+Median=15
+Lower Bound = -12.5
+Upper bound 47.5
+Outlier = 80
+
+
+
+
+
+
+
+
+Data:
+
+1.Qualitative
+1a. Nominal Data
+Categories without natural order
+Eyes color (green, blue, brown, black)
+Gender (male, female)
+Country names
+
+1b. Ordinal Data:
+Categories with a natural order but not fixed interval
+Rating: (poor, fair, good, excellent)
+Clothing sizes (S,M,L,XL)
+
+
+2.Quantitative
+2a. COntinuous Data Height:170.5 cm, Tempreature 36.6C 
+Infinite possible values
+Measured not counted
+
+2b. Discrete Data
+Number of students
+Number of coins
+
+Countable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
